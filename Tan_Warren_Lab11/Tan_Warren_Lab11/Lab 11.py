@@ -13,17 +13,29 @@ def main():
     print(f"\nFormat: \n\"{exampleInput}\" (\"~\" = infinity)")
     printArr(processInput(exampleInput))
 
-    userInput = input("Enter the array: ")
-    print()
-    vertex1 = input("Enter the starting vertex: ")
-    print()
-    vertex2 = input("Enter the ending vertex: ")
-    print()
+    # userInput = input("Enter the array: ")
+    # print()
+    # vertex1 = input("Enter the starting vertex: ")
+    # print()
+    # vertex2 = input("Enter the ending vertex: ")
+    # print()
 
     # test case
     # userInput = "~ 6 3 ~, 6 ~ 4 1, 3 4 ~ 1, ~ 1 1 ~"
     # vertex1 = "b"
     # vertex2 = "a"
+
+    # userInput = "~ 2 ~ 8 ~ ~, 2 ~ ~ 5 6 ~, ~ ~ ~ ~ 9 3, 8 5 ~ ~ 3 2, ~ 6 9 3 ~ 1, ~ ~ 3 2 1 ~"
+    # vertex1 = "a"
+    # vertex2 = "c"
+
+    # userInput = "~ 3 20 12 ~ ~, 3 ~ ~ 5 ~ ~ , 20 ~ ~ 9 2 ~, 12 5 9 ~ ~ 7, ~ ~ 2 ~ ~ 8, ~ ~ ~ 7 8 ~"
+    # vertex1 = "a"
+    # vertex2 = "e"
+
+    userInput = "~ 3 8 4 7, 3 ~ 10 9 2, 8 10 ~ 6 5, 4 9 6 ~ 1, 7 2 5 1 ~"
+    vertex1 = "a"
+    vertex2 = "c"
     
     # takes string, returns integer array
     processed = processInput(userInput)
